@@ -1,5 +1,5 @@
 import React from "react";
-import "./FaceRecognition.css";
+import styles from "./FaceRecognition.modules.css";
 
 const FaceRecognition = ({ imageUrl, box }) => {
   return (
@@ -13,7 +13,7 @@ const FaceRecognition = ({ imageUrl, box }) => {
           height="auto"
         />
         <div
-          className="bounding-box"
+          className={styles.BoundingBox}
           style={{
             top: box.topRow,
             right: box.rightCol,
